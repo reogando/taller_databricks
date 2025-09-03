@@ -16,22 +16,22 @@ databricks-etl-project/
 │   │   ├── categorias.csv
 │   │   └── ventas.csv
 │   ├── silver/                # Datos limpios y transformados
-│   │   ├── clientes_silver.delta
-│   │   ├── productos_silver.delta
-│   │   ├── categorias_silver.delta
-│   │   └── ventas_silver.delta
+│   │   ├── clientes_autoloader.delta
+│   │   ├── productos_autoloader.delta
+│   │   ├── categorias_autoloader.delta
+│   │   └── ventas_autoloader.delta
 │   └── gold/                  # Datos consolidados listos para analítica
-│       └── modelo_ventas.delta
+│       └── tabla_consolidada.delta
 ├── notebooks/                 # Notebooks en Databricks
 │   ├── taller_autoloader.ipynb
 └── img/                       # Scripts de apoyo en PySpark
-    ├── etl_job.py
-    ├── transformations.py
-    └── utils.py
+    └──job_detail.jpg
+└──cluster
+└──libs
 ```
 
 ## Scripts Description
-Taller Autoloader.py: Extracts raw data from csv in Azure Storage Gen2.
+Taller Autoloader.py: Extracts raw data from csv in Azure Storage Gen2. ✅
 
 ## Jobs & Pipelines
-The jobs are configured with the following parameters: {"location":"clientes","table_name":"clientes_autoloader"} ✅
+The jobs (clientes, ventas, categorias, productos) are configured with the following parameters: {"location":"clientes","table_name":"clientes_autoloader"} ✅

@@ -31,7 +31,7 @@ databricks-etl-project/
 ```
 
 ## Scripts Description
-Taller Autoloader.py: Extracts raw data from csv in Azure Storage Gen2. ✅
+taller_autoloader.ipynb: Extracts raw data from csv in Azure Storage Gen2. ✅
 
 ## Jobs & Pipelines
 The jobs (clientes, ventas, categorias, productos) are configured with the following parameters: {"location":"clientes","table_name":"clientes_autoloader"} ✅

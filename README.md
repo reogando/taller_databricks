@@ -27,6 +27,11 @@ databricks-etl-project/
 └── img/                       # Scripts de apoyo en PySpark
     └──job_detail.jpg
 └──cluster
+└──container
+│   ├── clientes
+│   ├── categorias
+│   ├── productos
+│   ├── ventas
 └──libs
 ```
 
@@ -34,4 +39,4 @@ databricks-etl-project/
 taller_autoloader.ipynb: Extracts raw data from csv in Azure Storage Gen2. ✅
 
 ## Jobs & Pipelines
-The jobs (clientes, ventas, categorias, productos) are configured with the following parameters: {"location":"clientes","table_name":"clientes_autoloader"} ✅
+The jobs (clientes, ventas, categorias, productos) are configured with the following parameters: EXAMPLE {"location":"clientes","table_name":"clientes_autoloader"} ✅
